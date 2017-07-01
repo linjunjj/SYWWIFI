@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_titlename2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收件人 ："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text2" />
+            <TextView
+                android:id="@+id/tv_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="何建"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text2" />
+            <TextView
+                android:id="@+id/tv_phone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="1507898451"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_shippingaddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_shippingaddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="收货地址：江西省广东是分为非绯闻绯闻个未发文改为发违法单位二哥丰范围我给违法 " />
+
+        </LinearLayout>
+
+      <LinearLayout
+          android:layout_marginTop="10dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <CheckBox
+              android:background="@drawable/selector_cb_adress"
+              android:button="@null"
+              android:id="@+id/iv_gouxuan2"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:layout_marginLeft="5dp"
+              android:gravity="center"
+              android:text="设为默认"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="match_parent" />
+
+          <ImageView
+              android:src="@mipmap/editing"
+              android:layout_width="20dp"
+              android:layout_height="20dp" />
+
+          <TextView
+              android:layout_marginLeft="5dp"
+              android:gravity="center"
+              android:text="编辑"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <ImageView
+              android:layout_marginLeft="5dp"
+              android:src="@mipmap/delet"
+              android:layout_width="20dp"
+              android:layout_height="20dp" />
+
+          <TextView
+              android:layout_marginLeft="5dp"
+              android:gravity="center"
+              android:text="删除"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+
+     <ImageView
+         android:layout_marginTop="20dp"
+         android:src="@mipmap/address_xian"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

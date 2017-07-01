@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.sywwifi.syw.module.main.MainActivity">
+    <TextView
+        android:id="@+id/tv_actionBar"
+        android:fitsSystemWindows="true"
+        android:text="上云网"
+        style="@style/main_actionBar" />
+    <FrameLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/fl_container"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+    android:orientation="horizontal"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:id="@+id/rg_main"
+    android:background="@android:color/white">
+
+    <RadioButton
+        android:id="@+id/rb_wifi"
+        android:text="上网"
+        android:drawableTop="@drawable/selector_rbmain_wifi"
+        android:drawablePadding="5dp"
+        style="@style/main_rb"/>
+
+    <RadioButton
+        android:id="@+id/rb_recreation"
+        android:text="娱乐"
+        android:drawableTop="@drawable/selector_rbmain_recreation"
+        android:drawablePadding="5dp"
+        style="@style/main_rb"/>
+
+    <RadioButton
+        android:id="@+id/rb_consumption"
+        android:text="抽奖"
+        android:drawableTop="@drawable/selector_rbmain_consumption"
+        android:drawablePadding="5dp"
+        style="@style/main_rb"/>
+
+    <RadioButton
+        android:id="@+id/rb_my"
+        android:text="我的"
+        android:drawableTop="@drawable/selector_rbmain_my"
+        android:drawablePadding="5dp"
+        style="@style/main_rb"/>
+
+</RadioGroup>
+</LinearLayout>

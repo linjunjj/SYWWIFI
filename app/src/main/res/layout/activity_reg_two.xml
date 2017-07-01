@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/lonin_bg"
+    android:orientation="vertical"
+    tools:context="com.sywwifi.syw.module.wifi.activity.RegTwoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_reg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shape_navigtion_gradient"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="注册"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+            <RelativeLayout
+                android:id="@+id/iv_oneback"
+                android:layout_centerVertical="true"
+                android:layout_width="50dp"
+                android:layout_height="40dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/back"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cd_reg_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        app:cardCornerRadius="3sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="手机号："
+                android:textColor="@color/text1"
+                android:textSize="@dimen/text2" />
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:digits="0123456789"
+                    android:maxLength="11"
+                    android:editable="false"
+                    android:id="@+id/et_regtwo_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text2" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cd_reg_psd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        app:cardCornerRadius="3sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="密码 ："
+                android:textColor="@color/text1"
+                android:textSize="@dimen/text2" />
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:maxLength="20"
+                    android:digits="_,0123456789abcdefghigklmnopqrstuvwxyzQWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:id="@+id/et_regtwo_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="请输入密码(默认密码可修改)"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text2" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cd_reg_card"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:cardCornerRadius="3sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="验证码："
+                    android:textColor="@color/text1"
+                    android:textSize="@dimen/text2" />
+
+                <EditText
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:id="@+id/et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="请输入验证码"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text2" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:cardCornerRadius="3sp">
+
+            <TextView
+                android:id="@+id/tv_getCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textSize="@dimen/text2" />
+        </android.support.v7.widget.CardView>
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+       android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_xiyi"
+            android:checked="true"
+            android:layout_marginRight="10dp"
+            android:button="@null"
+            android:background="@drawable/selector_login_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="@dimen/text2"
+            android:text="我已阅读并同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_xiyi"
+            android:textColor="#1DA2DC"
+            android:textSize="@dimen/text2"
+            android:text="《上云网用户协议》"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+       <Button
+         android:id="@+id/bt_regtwo_reg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_reg_bt"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text1" />
+
+</LinearLayout>

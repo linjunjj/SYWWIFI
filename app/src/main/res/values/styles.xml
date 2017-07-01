@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--base主题-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--主页面的模块切换-->
+    <style name="main_rb">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/selector_rbmain_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!--actionBar的样式-->
+    <style name="main_actionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:background">@drawable/shape_navigtion_gradient</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="login_et">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+    </style>
+
+    <style name="WaveProgressViewDefault">
+        <item name="radius">55dp</item>
+        <item name="progress_text_color">#fff</item>
+        <item name="progress_text_size">20sp</item>
+        <item name="progress_color">#C215AB30</item>
+        <item name="radius_color">#FF734B58</item>
+        <item name="progress">0</item>
+        <item name="maxProgress">100</item>
+    </style>
+
+    <style name="AppBaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppBaseTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

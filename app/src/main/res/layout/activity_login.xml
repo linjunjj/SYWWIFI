@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/lonin_bg"
+    tools:context="com.sywwifi.syw.module.wifi.activity.LoginActivity">
+
+ <ImageView
+        android:id="@+id/iv_lonin_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/login_logo" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_lonin_log"
+        android:layout_centerHorizontal="true"
+        android:text="点击返回首页" />
+
+    <LinearLayout
+        android:id="@+id/ll_login_account"
+        style="@style/login_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/login_account" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_login_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:digits="0123456789"
+                android:maxLines="1"
+                android:id="@+id/et_login_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_psw"
+        style="@style/login_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_login_account"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/login_psw" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/et_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:textColor="@color/white"
+        android:textSize="@dimen/text1"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_login_psw"
+        android:background="@drawable/shape_login_bt"
+        android:text="登入" />
+
+    <Button
+        android:textColor="@color/white"
+        android:textSize="@dimen/text1"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/bt_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_login"
+        android:background="@drawable/shape_reg_bt"
+        android:text="注册" />
+
+   <RelativeLayout
+       android:layout_below="@id/bt_reg"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+          android:layout_centerInParent="true"
+           android:id="@+id/tv_fgpwd"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="忘记密码？" />
+   </RelativeLayout>
+
+
+</RelativeLayout>

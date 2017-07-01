@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sywwifi.syw.module.wifi.activity.RechargeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shape_navigtion_gradient"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="充值"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/iv_oneback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/back" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/ci_Recharge"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/wifi_rb_chenked"
+            app:civ_border_color="#fff"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginTop="7dp"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ci_Recharge"
+            android:text="明明"
+            android:textSize="@dimen/text2" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_name"
+            android:text="(18379652845)"
+            android:textSize="@dimen/text2" />
+
+        <TextView
+            android:textColor="@color/text1"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/tv_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ci_Recharge"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ci_Recharge"
+            android:text="余额:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="#002C7E"
+            android:id="@+id/tv_money"
+            android:layout_marginBottom="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ci_Recharge"
+            android:layout_toRightOf="@id/tv_yue"
+            android:text="100"
+            android:textSize="15sp" />
+        <TextView
+            android:textColor="@color/text1"
+            android:layout_marginBottom="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ci_Recharge"
+            android:layout_toRightOf="@id/tv_money"
+            android:text="元"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text2"
+        android:text="请选择充值类型"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_recharge_hj"
+        android:clickable="true"
+        android:paddingLeft="30dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_bt_recharge"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+       <TextView
+           android:textColor="@color/black"
+           android:textSize="@dimen/text2"
+           android:drawablePadding="5dp"
+           android:gravity="center"
+           android:drawableLeft="@mipmap/recharge_recommend"
+           android:text="推荐年度黄金上网卡"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#AFAFAF"
+            android:id="@+id/tv_recharge_hj"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="10个月，每月10元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/ll_recharge_by"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_bt_recharge"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/text2"
+            android:text="季度白银上网卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#AFAFAF"
+            android:id="@+id/tv_recharge_by"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="3个月，每月16.6元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_recharge_dz"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_bt_recharge"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/text2"
+            android:text="一天短租网卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#AFAFAF"
+            android:id="@+id/tv_recharge_dz"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="一天，每元1天"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

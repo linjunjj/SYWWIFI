@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.sywwifi.syw.module.my.activity.ChangePwActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shape_navigtion_gradient"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="修改密码"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/iv_oneback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/back" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <EditText
+        android:id="@+id/et_pwd1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_chagepw_et"
+        android:digits="_,0123456789abcdefghigklmnopqrstuvwxyzQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="请输入原密码"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:textColor="@color/text1"
+        android:textColorHint="@color/text4"
+        android:textSize="@dimen/text2"/>
+
+
+    <EditText
+        android:id="@+id/et_pwd2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_chagepw_et"
+        android:digits="_,0123456789abcdefghigklmnopqrstuvwxyzQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="请设置新密码"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:textColor="@color/text1"
+        android:textColorHint="@color/text4"
+        android:textSize="@dimen/text2"/>
+
+    <EditText
+        android:id="@+id/et_pwd3"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_chagepw_et"
+        android:digits="_,0123456789abcdefghigklmnopqrstuvwxyzQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="请确认新密码"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:textColor="@color/text1"
+        android:textColorHint="@color/text4"
+        android:textSize="@dimen/text2"/>
+
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_navigtion_gradient"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text1"/>
+</LinearLayout>
