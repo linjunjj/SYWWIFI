@@ -8,8 +8,9 @@ import com.sywwifi.syw.utils.OkHttpUtil;
  * Created by shaowen on 2017/6/26.
  */
 
-public class App extends Application {
+public  class App extends Application {
     private static App app;
+
     @Override
     public void onCreate() {
         super.onCreate();

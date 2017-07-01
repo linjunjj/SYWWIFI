@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#339FC1</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#339FC1</color>
     <color name="white">#F8F8F8</color>
     <color name="colorMainRb">#B9B9B9</color>
     <color name="colorMainRbChecked">#053A87</color>
@@ -12,7 +12,7 @@
     <color name="line">#DEDEDE</color>
     <!--文字颜色-->
     <color name="bg">#F1F1F1</color>
-
+    <color name="colorPrimaryTextSecond">#727272</color>
     <color name="text1">#333333</color>
     <color name="text2">#666666</color>
     <color name="text3">#999999</color>

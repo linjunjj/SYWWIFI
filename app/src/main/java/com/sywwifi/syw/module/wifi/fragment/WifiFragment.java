@@ -18,10 +18,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sywwifi.syw.R;
+import com.sywwifi.syw.base.BaseFragment;
 import com.sywwifi.syw.eventbus.MessageIsSyw;
 import com.sywwifi.syw.module.wifi.activity.LoginActivity;
 import com.sywwifi.syw.utils.IsSywWifi;
-import com.sywwifi.syw.views.MyCircleView;
+
 import com.sywwifi.syw.views.WaveProgressView;
 
 import org.greenrobot.eventbus.EventBus;
@@ -33,7 +34,7 @@ import static android.content.Context.MODE_PRIVATE;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class WifiFragment extends Fragment implements View.OnClickListener {
+public class WifiFragment extends BaseFragment implements View.OnClickListener {
 
     public View view;
 
@@ -57,10 +58,20 @@ public class WifiFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
+    public void requestData() {
+        mCurState = STATE_SUCCESS;
+    }
+
+    @Override
+    public void showPage() {
+        view=View.inflate(getActivity(),R.layout.fragment_wifi,null);
+        initView();
+    }
+
+    @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         EventBus.getDefault().register(this);
-        initView();
     }
 
     private void initView() {
