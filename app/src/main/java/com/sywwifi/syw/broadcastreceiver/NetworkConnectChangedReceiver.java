@@ -28,7 +28,10 @@ public class NetworkConnectChangedReceiver extends BroadcastReceiver {
                 case 3:
                     EventBus.getDefault().post(new MessageIsSyw(3));
                     break;
+                case 4:
+                    EventBus.getDefault().post(new MessageIsSyw(4));
             }
+
         }
 
 

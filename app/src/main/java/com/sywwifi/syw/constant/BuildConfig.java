@@ -13,4 +13,7 @@ public class BuildConfig {
     public static final String VERSION_NAME = "4.0.0";
     // Fields from default config.
     public static final boolean TINKER_ENABLE = true;
+    public  static  final String SSIDWIFI="上云网";
+
+
 }

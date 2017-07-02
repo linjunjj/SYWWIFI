@@ -17,12 +17,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.sywwifi.syw.BuildConfig;
 import com.sywwifi.syw.R;
 import com.sywwifi.syw.base.BaseFragment;
 import com.sywwifi.syw.eventbus.MessageIsSyw;
 import com.sywwifi.syw.module.wifi.activity.LoginActivity;
 import com.sywwifi.syw.utils.IsSywWifi;
 
+import com.sywwifi.syw.utils.WifiAdmin;
+import com.sywwifi.syw.utils.WifiConnector;
 import com.sywwifi.syw.views.WaveProgressView;
 
 import org.greenrobot.eventbus.EventBus;
@@ -44,7 +47,8 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener {
     private TextView mTvWenHao;
     private Button  mBtNet;
     private Button mBtLogin;
-
+     private WifiAdmin wifiAdmin;
+    private WifiConnector wifiConnector;
     public WifiFragment() {
         // Required empty public constructor
     }
@@ -109,10 +113,15 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener {
         switch (linkSywWifi){
             case 1:
             case 3:
-                //打开wifi系统设置
-                Intent intent = new Intent(Settings.ACTION_WIFI_SETTINGS);
-                startActivity(intent);
+                wifiAdmin=new WifiAdmin(getActivity());
+                wifiAdmin.openWifi();
+                wifiConnector =new WifiConnector(getActivity());
+                wifiConnector.connect(com.sywwifi.syw.constant.BuildConfig.SSIDWIFI,"",null);
                 break;
+            case 4:
+
+
+
             case 2:
                 Toast.makeText(getActivity(), "已经连接上云网", Toast.LENGTH_LONG).show();
                 break;
@@ -153,6 +162,15 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener {
        double mb = (traffic + alwaysTraffic) / (1024 * 1024);
        return mb;
    }
+   private  void wificonnect(){
+
+
+
+
+
+   }
+
+
 
 
     @Override

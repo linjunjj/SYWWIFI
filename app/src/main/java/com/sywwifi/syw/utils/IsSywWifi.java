@@ -53,9 +53,10 @@ public class IsSywWifi {
                 && activeNetInfo.getType() == ConnectivityManager.TYPE_WIFI;
     }
 
-    public  static  int OUTER_NETRE = 1;  //链接外网
+    public  static  int OUTER_NETRE = 1;  //链接手机数据流量
     public  static  int SYW_WIFI = 2;    //链接上云网
-    public  static  int  NO_WIFI_NET = 3; //链接其他wifi 或者任何没开网络
+    public  static  int  NO_WIFI_NET = 3; //没开网络
+    public  static  int   OUT_WIFI=4;//链接其他wifi
 
     public static int isLinkSywWifi(Context  context) {
         boolean isWifi = isWifi(context);
@@ -70,7 +71,7 @@ public class IsSywWifi {
             if(isSyw){
                 return SYW_WIFI;
             }
-            return NO_WIFI_NET;
+            return OUT_WIFI;
         }
 
         return NO_WIFI_NET;
